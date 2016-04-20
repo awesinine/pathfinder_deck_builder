@@ -9,10 +9,10 @@ class FeatCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Feat",
+          "title": "#{path["name"]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{path["name"]}",
+          "subtitle | Feat",
           "rule",
           "property | Category | #{path["categorytext"]}",
           "section | Description",
@@ -24,10 +24,10 @@ class FeatCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Feat",
+          "title": "#{f["name"]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{f["name"]}",
+          "subtitle | Feat",
           "rule",
           "property | Category | #{f["categorytext"]}",
           "fill",
