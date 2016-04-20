@@ -9,10 +9,10 @@ class TrackedResourceCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "purple",
-          "title": "Tracked Resource",
+          "title": "#{path["name"]}",
           "icon": nil,
           "contents": [
-          "text | #{path["name"]}",
+          "text | Tracked Resource",
           "fill",
           "section | Charges",
           "boxes | #{path["max"]} | 2.5"
@@ -23,10 +23,10 @@ class TrackedResourceCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "purple",
-          "title": "Tracked Resource",
+          "title": "#{tr["name"]}",
           "icon": nil,
           "contents": [
-          "text | #{tr["name"]}",
+          "text | Tracked Resource",
           "fill",
           "section | Charges",
           "boxes | #{tr["max"]} | 2.5"
