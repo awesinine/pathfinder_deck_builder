@@ -9,10 +9,10 @@ class SkillCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "orange",
-          "title": "Skill",
+          "title": "#{path[name]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{path[name]}",
+          "subtitle | Skill",
           "rule",
           "property | Value | #{path["value"]}",
           "property | Ranks | #{path["ranks"]}",
@@ -26,10 +26,10 @@ class SkillCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "orange",
-          "title": "Skill",
+          "title": "#{sc["name"]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{sc["name"]}",
+          "subtitle | Skill",
           "rule",
           "property | Value | #{sc["value"]}",
           "property | Ranks | #{sc["ranks"]}",
