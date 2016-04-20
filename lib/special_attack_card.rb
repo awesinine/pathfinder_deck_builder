@@ -9,10 +9,10 @@ class SpecialAttackCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Special Attack",
+          "title": "#{path["shortname"]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{path["shortname"]}",
+          "subtitle | Special Attack",
           "rule",
           "property | Type | #{path["type"]}",
           "fill",
@@ -25,10 +25,10 @@ class SpecialAttackCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Special Attack",
+          "title": "#{sa["shortname"]}",
           "icon": nil,
           "contents": [
-          "subtitle | #{sa["shortname"]}",
+          "subtitle | Special Attack",
           "rule",
           "property | Type | #{sa["type"]}",
           "fill",
