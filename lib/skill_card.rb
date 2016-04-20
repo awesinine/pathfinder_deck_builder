@@ -5,7 +5,7 @@ class SkillCard < CharacterCard
   def create_card(xml_file)
     path = xml_file["document"]["public"]["character"]["skills"]["skill"]
 
-    if path.class == Hash
+    if path.class == Hash && path["value"] > 0
       @class_cards << {
         "count": 1,
         "color": "orange",
@@ -21,7 +21,7 @@ class SkillCard < CharacterCard
           "text | #{path["description"]}"[0..500]
         ]
       }
-    elsif path.class == Array
+    elsif path.class == Array && path["value"] > 0
       path.each do |sc|
         @class_cards << {
         "count": 1,
