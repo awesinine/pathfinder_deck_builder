@@ -9,10 +9,10 @@ class SpellCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Spell",
+          "title": "#{path["name"]}",
           "icon": "white-book-#{path["level"]}",
           "contents": [
-          "subtitle | #{path["name"]}",
+          "subtitle | Spell",
           "rule",
           "property | Class | #{path["class"]}",
           "property | Level | #{path["level"]}",
@@ -31,10 +31,10 @@ class SpellCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "Spell",
+          "title": "#{s["name"]}",
           "icon": "white-book-#{s["level"]}",
           "contents": [
-          "subtitle | #{s["name"]}",
+          "subtitle | Spell",
           "rule",
           "property | Class | #{s["class"]}",
           "property | Level | #{s["level"]}",
