@@ -21,23 +21,25 @@ class SkillCard < CharacterCard
           "text | #{path["description"]}"[0..500]
         ]
       }
-    elsif path.class == Array && path["value"].to_i > 0
+    elsif path.class == Array
       path.each do |sc|
-        @class_cards << {
-        "count": 1,
-        "color": "orange",
-          "title": "#{sc["name"]}",
-          "icon": nil,
-          "contents": [
-          "subtitle | Skill",
-          "rule",
-          "property | Value | #{sc["value"]}",
-          "property | Ranks | #{sc["ranks"]}",
-          "property | #{sc["attrname"]} Bonus: | #{sc["attrbonus"]}",
-          "section | Description",
-          "text | #{sc["description"]}"[0..500]
-        ]
-      }
+        if sc["value"].to_i > 0
+          @class_cards << {
+          "count": 1,
+          "color": "orange",
+            "title": "#{sc["name"]}",
+            "icon": nil,
+            "contents": [
+            "subtitle | Skill",
+            "rule",
+            "property | Value | #{sc["value"]}",
+            "property | Ranks | #{sc["ranks"]}",
+            "property | #{sc["attrname"]} Bonus: | #{sc["attrbonus"]}",
+            "section | Description",
+            "text | #{sc["description"]}"[0..500]
+          ]
+        }
+        end
       end
     end
   end
